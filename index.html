@@ -9,12 +9,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/imgs/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/imgs/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/imgs/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/imgs/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/imgs/favicon/site.webmanifest" />
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="imgs/logojl2.png" alt="Logo Julia Lirsac"></div>
-            <ul>
+            <div class="logo"><img src="imgs/pingui-npbg.png" alt="Logo Julia Lirsac"></div>
+            <ul class="nav-menu">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#tarifs">Tarifs</a></li>
                 <li><a href="#process">Processus</a></li>
@@ -23,93 +28,178 @@
                 <li><a href="#about">À propos</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="Changer le thème">
+                    <span class="theme-toggle-icon sun">☀️</span>
+                    <span class="theme-toggle-icon moon">🌙</span>
+                </button>
+                <button class="burger-menu" aria-label="Menu">
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                    <span class="burger-line"></span>
+                </button>
+            </div>
         </nav>
-      
     </header>
 
     <main>
         <div class="hero">
-            <h1>Julia Lirsac</h1>
-            <h2>Lectrice Correctrice Freelance</h2>
-            <p>Donnez à vos textes la clarté et la précision qu'ils méritent</p>
-            <a href="#contact" class="cta-button">Demander un devis</a>
+            <div class="hero-content">
+                <h1>Julia Lirsac</h1>
+                <div class="hero-subtitle">
+                    <h2>Lectrice Correctrice Freelance</h2>
+                    <div class="expertise-badges">
+                        <span class="expertise-badge">Culture & Arts</span>
+                        <span class="expertise-badge">Sociologie</span>
+                        <span class="expertise-badge">Académique</span>
+                    </div>
+                </div>
+                <p class="hero-tagline">Experte en correction de textes culturels et universitaires</p>
+                <p class="hero-description">25 ans d'expérience dans le spectacle vivant et la sociologie pour donner à vos textes la clarté et la précision qu'ils méritent.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button">Demander un devis gratuit</a>
+                    <p class="cta-note">Réponse sous 24h ouvrées</p>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-item">
+                        <span class="trust-icon">🎓</span>
+                        <span class="trust-text">Certifiée en correction-révision</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">⭐</span>
+                        <span class="trust-text">Note d'excellence : 17/20</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="trust-icon">💪</span>
+                        <span class="trust-text">Accompagnement personnalisé</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <section id="services">
-            <h2>Mes Services</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Correction</h3>
-                    <p>Correction minutieuse de l'orthographe, la grammaire, la syntaxe et la typographie de vos documents. Je veille à la cohérence des titres, des notes de bas de page et des annexes.</p>
-                    <ul class="service-details">
-                        <li>Correction orthographique et grammaticale</li>
-                        <li>Vérification de la ponctuation</li>
-                        <li>Harmonisation typographique</li>
-                        <li>Respect des règles éditoriales</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>Relecture</h3>
-                    <p>Amélioration approfondie du style, de la fluidité et de la cohérence de vos textes. Je m'assure que votre message est clair et impactant.</p>
-                    <ul class="service-details">
-                        <li>Amélioration stylistique</li>
-                        <li>Vérification de la cohérence</li>
-                        <li>Élimination des répétitions</li>
-                        <li>Optimisation de la structure</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <h3>Réécriture</h3>
-                    <p>Reformulation professionnelle pour une meilleure lisibilité et un impact optimal, tout en préservant votre message et votre style.</p>
-                    <ul class="service-details">
-                        <li>Adaptation du niveau de langue</li>
-                        <li>Clarification du message</li>
-                        <li>Restructuration du contenu</li>
-                      
-                    </ul>
+            <div class="section-content">
+                <h2>Mes Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Correction</h3>
+                        <p>Spécialisée dans la correction de contenus liés au spectacle vivant et à la sociologie, j'offre des prestations sur mesure adaptées aux besoins des professionnels et des universitaires.</p>
+                        <ul class="service-details">
+                            <li>Correction orthographique et grammaticale</li>
+                            <li>Vérification de la syntaxe et typographie</li>
+                            <li>Harmonisation des contenus</li>
+                            <li>Respect des règles éditoriales</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Préparation de textes</h3>
+                        <p>Mon expertise garantit une rédaction fluide, précise et respectueuse des nuances du langage, particulièrement adaptée aux publications culturelles et académiques.</p>
+                        <ul class="service-details">
+                            <li>Préparation pour le spectacle vivant</li>
+                            <li>Publications culturelles</li>
+                            <li>Thèses et mémoires</li>
+                            <li>Revues spécialisées</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <h3>Accompagnement</h3>
+                        <p>Grâce à ma connaissance approfondie des enjeux artistiques et sociologiques, je valorise chaque texte avec rigueur et créativité.</p>
+                        <ul class="service-details">
+                            <li>Accompagnement académique</li>
+                            <li>Conseil rédactionnel</li>
+                            <li>Optimisation de la lisibilité</li>
+                            <li>Amélioration de l'impact</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="tarifs">
-            <h2>Tarifs</h2>
-            <div class="pricing-grid">
-                <div class="pricing-item">
-                    <h3>Correction</h3>
-                    <p class="price">À partir de 3€/feuillet*</p>
-                    <p class="price-note">*1 feuillet = 1500 signes</p>
-                    <ul class="pricing-details">
-                        <li>Orthographe</li>
-                        <li>Grammaire</li>
-                        <li>Typographie</li>
-                        <li>Ponctuation</li>
-                    </ul>
+            <div class="section-content">
+                <h2>Tarifs</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-item">
+                        <h3>Tarif Horaire</h3>
+                        <div class="price-wrapper">
+                            <p class="price">25€<span class="price-period">/heure</span></p>
+                            <p class="price-note">≈ 10 000 signes corrigés</p>
+                        </div>
+                        <ul class="pricing-details">
+                            <li>Textes sans difficulté particulière</li>
+                            <li>Facturation minimum : 15€</li>
+                            <li>Pour moins de 6 000 signes</li>
+                            <li>Devis personnalisé selon complexité</li>
+                        </ul>
+                        <div class="pricing-speed">
+                            <h4>Vitesse moyenne</h4>
+                            <ul>
+                                <li>8 000 signes/h en préparation</li>
+                                <li>12 000 signes/h en relecture</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="pricing-item highlight">
+                        <h3>Tarifs Dégressifs</h3>
+                        <ul class="pricing-details pricing-tiers">
+                            <li>
+                                <span class="tier-volume">10h de travail</span>
+                                <span class="tier-discount">-10%</span>
+                            </li>
+                            <li>
+                                <span class="tier-volume">20h de travail</span>
+                                <span class="tier-discount">-20%</span>
+                            </li>
+                            <li>
+                                <span class="tier-volume">30h et plus</span>
+                                <span class="tier-discount">-30%</span>
+                            </li>
+                            <li class="student-discount">
+                                <span>Étudiants : -30%</span>
+                                <small>(sur justificatif)</small>
+                            </li>
+                            <li class="urgent-work">
+                                <span>Travaux urgents : +50%</span>
+                                <small>(week-ends/jours fériés)</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pricing-item">
+                        <h3>Délais Indicatifs</h3>
+                        <ul class="pricing-details delivery-times">
+                            <li>
+                                <span class="document-type">CV, lettres de motivation</span>
+                                <span class="delivery-time">48h</span>
+                            </li>
+                            <li>
+                                <span class="document-type">Textes courts (2-5 pages)</span>
+                                <span class="delivery-time">2-5 jours</span>
+                            </li>
+                            <li>
+                                <span class="document-type">Publications réseaux sociaux</span>
+                                <span class="delivery-time">24h</span>
+                            </li>
+                            <li>
+                                <span class="document-type">Contenus web</span>
+                                <span class="delivery-time">10 jours</span>
+                            </li>
+                            <li>
+                                <span class="document-type">Textes longs</span>
+                                <span class="delivery-time">1-4 semaines</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="pricing-item">
-                    <h3>Relecture</h3>
-                    <p class="price">À partir de 4€/feuillet*</p>
-                    <p class="price-note">*1 feuillet = 1500 signes</p>
-                    <ul class="pricing-details">
-                        <li>Correction complète</li>
-                        <li>Style et cohérence</li>
-                        <li>Structure du texte</li>
-                        <li>Suggestions d'amélioration</li>
-                    </ul>
+
+                <div class="pricing-note">
+                    <p><strong>Note importante :</strong> Le tarif final peut varier selon la complexité du texte (termes techniques, noms propres, références à vérifier, etc.) et les délais souhaités.</p>
+                    <p><small>* Les délais sont indicatifs et seront précisés sur le devis. Jours ouvrés uniquement sauf mention contraire.</small></p>
                 </div>
-                <div class="pricing-item">
-                    <h3>Réécriture</h3>
-                    <p class="price">Sur devis</p>
-                    <ul class="pricing-details">
-                        <li>Analyse des besoins</li>
-                        <li>Reformulation complète</li>
-                        <li>Adaptation du style</li>
-                        <li>Révisions illimitées</li>
-                    </ul>
+
+                <div class="pricing-cta">
+                    <p>Chaque projet est unique. Contactez-moi pour un devis personnalisé adapté à vos besoins et délais.</p>
+                    <a href="#contact" class="cta-button">Demander un devis</a>
                 </div>
-            </div>
-            <div class="pricing-cta">
-                <p>Chaque projet est unique. Contactez-moi pour un devis personnalisé.</p>
-                <a href="#contact" class="cta-button">Demander un devis</a>
             </div>
         </section>
 
@@ -140,46 +230,69 @@
         </section>
 
         <section id="portfolio">
-            <h2>Ils m'ont fait confiance</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <div class="portfolio-icon">📚</div>
-                    <h3>Édition</h3>
-                    <ul class="portfolio-list">
-                        <li>Éditions du Seuil</li>
-                        <li>Gallimard</li>
-                        <li>Flammarion</li>
-                    </ul>
+            <div class="section-content">
+                <h2>Projets Récents</h2>
+                <div class="portfolio-intro">
+                    <p>Découvrez quelques exemples de mes dernières collaborations</p>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-icon">🎓</div>
-                    <h3>Académique</h3>
-                    <ul class="portfolio-list">
-                        <li>Université de Lyon</li>
-                        <li>CNRS</li>
-                        <li>Institut Pasteur</li>
-                    </ul>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <div class="portfolio-logo">
+                            <img src="imgs/logos/nba.jpg" alt="Logo Newbox" class="client-logo">
+                        </div>
+                        <h3>Correction Print et Web</h3>
+                        <div class="portfolio-content">
+                            <p class="project-description">Correction et relecture des projets clients de l'agence Newbox, agence de communication digitale</p>
+                            <div class="project-details">
+                                <span class="project-tag">Site web</span>
+                                <span class="project-tag">Contenu digital</span>
+                                <a href="https://www.agence-newbox.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <span class="project-tag">Voir le site</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item">
+                        <div class="portfolio-logo">
+                            <img src="imgs/logos/studiodici.jpeg" alt="Logo Newbox" class="client-logo">
+                        </div>
+                        <h3>Correction des projets clients</h3>
+                        <div class="portfolio-content">
+                            <p class="project-description">Correction et relecture des projets clients de l'agence Le Studio d'Ici, studio de design</p>
+                            <div class="project-details">
+                                <span class="project-tag">Site web</span>
+                                <span class="project-tag">Contenu digital</span>
+                                <a href="https://www.lestudiodici.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <span class="project-tag">Voir le site</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+             
+             
+                    <div class="portfolio-item">
+                        <div class="portfolio-logo">
+                            <img src="imgs/logos/logoUC-vertical-bicolore-106x159.svg" alt="Logo Université Champollion" class="client-logo">
+                        </div>
+                        <h3>Thèse Universitaire</h3>
+                        <div class="portfolio-content">
+                            <p class="project-description">Correction et relecture d'une thèse en sociologie pour l'Institut National Universitaire Champollion</p>
+                            <div class="project-details">
+                                <span class="project-tag">Thèse</span>
+                                <span class="project-tag">250 pages</span>
+                                <a href="https://www.univ-jfc.fr/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <span class="project-tag">Voir l'université</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-icon">💼</div>
-                    <h3>Entreprises</h3>
-                    <ul class="portfolio-list">
-                        <li>L'Oréal</li>
-                        <li>BNP Paribas</li>
-                        <li>Orange</li>
-                    </ul>
-                </div>
-                <div class="portfolio-item">
-                    <div class="portfolio-icon">📰</div>
-                    <h3>Médias</h3>
-                    <ul class="portfolio-list">
-                        <li>Le Monde</li>
-                        <li>Libération</li>
-                        <li>France Culture</li>
-                    </ul>
+                <div class="portfolio-cta">
+                    <p>Vous avez un projet similaire ?</p>
+                    <a href="#contact" class="cta-button">Parlons-en</a>
                 </div>
             </div>
-            <p class="portfolio-note">* Exemples de clients types - Liste non exhaustive</p>
         </section>
 
         <section id="testimonials">
@@ -233,9 +346,13 @@
             <div class="about-content">
                 <img src="imgs/juliaprofile.jpg" alt="Julia Lirsac" class="profile-image">
                 <div class="about-text">
-                    <p>Forte de plus de vingt ans d'expérience dans le secteur culturel et passionnée par la littérature et la langue française, j'ai récemment concrétisé mon ambition en obtenant ma certification en correction-révision avec excellence (17/20).</p>
-                    <p>Cette double expertise - culturelle et linguistique - me permet d'offrir un regard à la fois professionnel et sensible sur vos textes. Je comprends les enjeux de communication actuels tout en restant fidèle à la richesse de notre langue.</p>
-                    <p>Que vous soyez dans l'édition, la presse, le web ou tout autre domaine nécessitant une parfaite maîtrise du français, je mets mes compétences au service de la qualité de vos contenus. Mon objectif : donner à vos textes toute la clarté et la précision qu'ils méritent.</p>
+                    <p>Lectrice-correctrice diplômée et forte de 25 ans d'expérience dans le domaine du spectacle vivant, je conjugue savoir-faire linguistique et passion pour l'art et la scène. Ma solide expertise en sociologie, acquise au cours de mes études, enrichit mon regard critique et analytique.</p>
+                    
+                    <p>Cette double expertise - culturelle et linguistique - me permet d'offrir un regard à la fois professionnel et sensible sur vos textes. Spécialisée dans la correction de contenus liés au spectacle vivant et à la sociologie, je propose des prestations sur mesure adaptées aux besoins des professionnels et des universitaires.</p>
+                    
+                    <p>Passionnée par les mots et attentive aux détails, je mets mon expérience au service de vos projets. Grâce à ma connaissance approfondie des enjeux artistiques et sociologiques, je suis à même de comprendre et de valoriser le contenu de chaque texte, qu'il s'agisse de créations artistiques ou de recherches académiques.</p>
+                    
+                    <p>J'ai récemment concrétisé mon ambition en obtenant ma certification en correction-révision avec excellence (17/20), confirmant ainsi mon engagement envers la qualité et la précision dans mon travail.</p>
                 </div>
             </div>
         </section>
@@ -245,23 +362,34 @@
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Lectrice-Correctrice Freelance</h3>
-                        <p class="timeline-date">Depuis 2019</p>
+                        <h3>Correctrice-Relectrice Freelance</h3>
+                        <p class="timeline-date">Depuis 2023</p>
                         <ul class="experience-details">
-                            <li>Correction et révision de contenus variés : manuscrits, articles, contenus web</li>
-                            <li>Collaboration avec des maisons d'édition et des entreprises</li>
-                            <li>Accompagnement personnalisé d'auteurs et de professionnels</li>
+                            <li>Correction et relecture de contenus print et web pour des agences de communication</li>
+                            <li>Correction de thèses universitaires en sociologie</li>
+                            <li>Accompagnement personnalisé des clients</li>
                         </ul>
                     </div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-content">
-                        <h3>Rédactrice Web & Journaliste</h3>
-                        <p class="timeline-date">2016 - 2019</p>
+                        <h3>Chargée de Production</h3>
+                        <p class="timeline-date">2000 - 2023</p>
                         <ul class="experience-details">
-                            <li>Rédaction et édition de contenus pour divers médias</li>
-                            <li>Gestion de projets éditoriaux</li>
-                            <li>Coordination avec les équipes de production</li>
+                            <li>Gestion administrative et financière de projets culturels</li>
+                            <li>Coordination d'équipes et de projets</li>
+                            <li>Rédaction de dossiers de subventions et de production</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Formation</h3>
+                        <p class="timeline-date">2023</p>
+                        <ul class="experience-details">
+                            <li>Certification en Correction-Révision (17/20)</li>
+                            <li>Formation aux outils professionnels de correction</li>
+                            <li>Maîtrise des normes typographiques et éditoriales</li>
                         </ul>
                     </div>
                 </div>
@@ -390,6 +518,65 @@
                         <p>Je m'engage à respecter une confidentialité totale concernant vos documents. Si nécessaire, je peux signer un accord de confidentialité (NDA). Vos données sont stockées de manière sécurisée et supprimées après la fin du projet, sauf accord contraire.</p>
                     </div>
                 </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <div class="faq-question-content">
+                            <span class="faq-question-icon">📏</span>
+                            <h3>Comment calculez-vous le volume de texte ?</h3>
+                        </div>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="reference-boxes">
+                            <div class="reference-box">
+                                <div class="reference-header">
+                                    <span class="reference-icon">📄</span>
+                                    <h4>1 Page A4</h4>
+                                </div>
+                                <div class="reference-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">2 500</span>
+                                        <span class="metric-label">signes</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">40</span>
+                                        <span class="metric-label">lignes</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">350-400</span>
+                                        <span class="metric-label">mots</span>
+                                    </div>
+                                    <div class="metric highlight">
+                                        <span class="metric-value">≈ 2</span>
+                                        <span class="metric-label">feuillets</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="reference-box">
+                                <div class="reference-header">
+                                    <span class="reference-icon">📝</span>
+                                    <h4>1 Feuillet</h4>
+                                </div>
+                                <div class="reference-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">1 500</span>
+                                        <span class="metric-label">signes</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">25</span>
+                                        <span class="metric-label">lignes</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">250</span>
+                                        <span class="metric-label">mots</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="reference-note">Note : Le terme « signe » désigne une lettre, un signe de ponctuation ou une espace.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -414,48 +601,59 @@
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Contact</h4>
-                <ul class="footer-contact">
-                    <li>
-                        <span class="footer-icon">📧</span>
-                        <a href="mailto:julia.lirsac@gmail.com">julia.lirsac@gmail.com</a>
-                    </li>
-                    <li>
-                        <span class="footer-icon">📍</span>
-                        <span>Albi, France</span>
-                    </li>
-                </ul>
+        <div class="section-content">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <span class="footer-icon">📧</span>
+                            <a href="mailto:contact@julialirsac.fr">contact@julialirsac.fr</a>
+                        </li>
+                        <li>
+                            <span class="footer-icon">📍</span>
+                            <span>Albi (81)</span>
+                        </li>
+                        <li>
+                            <span class="footer-icon">📱</span>
+                            <a href="tel:+33676570656">06 76 57 06 56</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Suivez-moi</h4>
+                    <ul class="footer-social">
+                        <li>
+                            <a href="https://www.linkedin.com/in/julia-lirsac" target="_blank" rel="noopener noreferrer">
+                                <img src="imgs/linkedin.svg" alt="LinkedIn" class="social-icon">
+                                LinkedIn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.malt.fr/profile/julialirsac" target="_blank" rel="noopener noreferrer">
+                                <img src="imgs/logos/malt.svg" alt="Malt" class="social-icon">
+                                Malt
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul class="footer-nav">
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#tarifs">Tarifs</a></li>
+                        <li><a href="#portfolio">Références</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
             
-            <div class="footer-section">
-                <h4>Suivez-moi</h4>
-                <ul class="footer-social">
-                    <li>
-                        <a href="https://www.linkedin.com/in/julia-lirsac-2a52ab7b/" target="_blank" rel="noopener noreferrer">
-                            <img src="imgs/linkedin.svg" alt="LinkedIn" class="social-icon">
-                            LinkedIn
-                        </a>
-                    </li>
-        
-                </ul>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Julia Lirsac - Tous droits réservés</p>
+                <p>Website by <a href="https://www.mrscapuche.fr" target="_blank" rel="noopener noreferrer">Mrscapuche</a></p>
             </div>
-            
-            <div class="footer-section">
-                <h4>Navigation</h4>
-                <ul class="footer-nav">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#tarifs">Tarifs</a></li>
-                    <li><a href="#portfolio">Références</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Julia Lirsac - Tous droits réservés</p>
-            <p>Website by <a href="https://www.mrscapuche.fr" target="_blank" rel="noopener noreferrer">Mrscapuche</a></p>
         </div>
     </footer>
 

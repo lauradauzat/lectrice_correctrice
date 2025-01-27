@@ -71,4 +71,51 @@ document.addEventListener('DOMContentLoaded', function() {
             item.classList.toggle('active');
         });
     });
+
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    burgerMenu.addEventListener('click', function() {
+        burgerMenu.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Fermer le menu quand on clique sur un lien
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            burgerMenu.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+
+    // Fermer le menu quand on clique en dehors
+    document.addEventListener('click', (e) => {
+        if (!navMenu.contains(e.target) && !burgerMenu.contains(e.target)) {
+            burgerMenu.classList.remove('active');
+            navMenu.classList.remove('active');
+        }
+    });
+
+    // Theme Toggle functionality
+    const themeToggle = document.querySelector('.theme-toggle');
+    const themeToggleIcon = document.querySelector('.theme-toggle-icon');
+    
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(savedTheme);
+    
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateThemeIcon(newTheme);
+    });
+    
+    function updateThemeIcon(theme) {
+        // Pas besoin de changer les icônes car elles sont toujours présentes
+        // Le CSS gère leur visibilité
+    }
 }); 
